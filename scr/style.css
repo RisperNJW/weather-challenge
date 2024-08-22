@@ -1,0 +1,112 @@
+body{
+    background-color: #f9f7f7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f9f7f7;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: radial-gradient(circle at 10% 20%, rgb(150, 192, 236) 10%, rgba(149, 147, 231, 1) 55.5%);
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2); ;
+}
+.header {
+    border-bottom: 2px solid #f9e5e5;
+    padding: 0 0 30px 0;
+}
+
+.search-form {
+    background-color: #f9e5e5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 30px 0 0 0;
+    width: 80%;
+}
+
+.submit-btn {
+    background-color: #f9e5e5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+
+.card {
+    display: grid;
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.weather-container {
+    background-image:url('image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.temperature-container {
+    display: flex;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+.h-city, .icon, .temp-details {
+    font-size: 40px;
+}
+.weather-unit{
+    position: relative;
+    top: -10px;
+    left: -5px;
+    font-size: 20px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+.details {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 20px;
+    margin: 30px 0;
+    align-self: center;
+}
+
+.week-days {
+    display: inline-block;
+    line-height: 20px;
+    margin: 30px 0;
+    padding: 0 10px;
+    text-align: center;
+    background: rgba(221, 220, 220, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #a93ca9;
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: #520a0a;
+}
+
