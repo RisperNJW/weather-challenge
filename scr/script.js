@@ -1,4 +1,3 @@
-
 // Function to handle displaying weather information  
 function weatherInfo(response) {  
   let cityElement = document.querySelector("#city");  
