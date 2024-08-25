@@ -89,7 +89,7 @@ function displayForecast(response) {
       let minTemperature = Math.round(day.temperature.minimum);  
       let icon = day.condition.icon_url;  
 
-      forecastHtml += `<div class="daily-forecast">${formatDay(day.time)}: <img src="${icon}" alt="Weather icon" width="36"> Max: ${maxTemperature}℃ / Min: ${minTemperature}℃</div>`;  
+      forecastHtml += `<div class="daily-forecast">${formatDay(day.time)}: <img src="${icon}" alt="Weather icon" width="36"> ${maxTemperature}℃/ ${minTemperature}℃</div>`;  
     }  
   });  
 
