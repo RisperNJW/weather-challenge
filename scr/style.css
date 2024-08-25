@@ -1,6 +1,6 @@
 body{
     background-color: #f9f7f7;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 a {
@@ -53,24 +53,41 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 200px;
     margin-top: 20px;
     border-radius: 10px;
-    justify-content: center;
+}
+
+.weather-condition {
+    font: 1em 'Lora', serif;
+    text-transform: capitalize;
+    font-style: oblique;
 }
 
 .temperature-container {
     display: flex;
-    line-height: 40px;
+    justify-content: center;
     padding: 0 20px;
-    margin: 30px 0;
+    margin: 10px 0;
 }
-.h-city, .icon, .temp-details {
+.temp-details {
     font-size: 40px;
+    line-height: 40px;
+    align-items: center;
+} 
+
+.icon {
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+.h-city{
+    padding: 0 20px;
+    font-size: 40px;
+    line-height: 40px;
 }
 .weather-unit{
     position: relative;
-    top: -10px;
+    top: -20px;
     left: -5px;
     font-size: 20px;
 }
@@ -91,16 +108,23 @@ a {
     align-self: center;
 }
 
-.week-days {
-    display: inline-block;
-    line-height: 20px;
+.weather-forecast {
+    display: flex;
     margin: 30px 0;
+}
+
+.daily-forecast {
+    line-height: 20px;
+    margin: 10px 0;
     padding: 0 10px;
     text-align: center;
+    font-size: 16px;
+    border: 1px solid #f9e5e5;
     background: rgba(221, 220, 220, 0.2);
     backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
+   
 }
 
 footer {

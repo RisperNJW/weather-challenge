@@ -3,20 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="scr/style.css">
-    <title>my-weather</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <header>
+    <div class="container">
+        <header class="header">
+            <form class="search-bar" id="search-bar">
+                <input type="search" id="search-form" class="search-form" placeholder="Search" required>
+                <input type="submit" id="submit" class="submit-btn">    
+            </form>
+        </header>
+        <main>
+            <div class="card">
+                <div class="weather-container">
+                    <h1 id="city" class="h-city">Nairobi</h1>
+                    <div class="temperature-container">
+                        <p><span id="weather-condition" class="weather-condition"></span></p>
+                        <div id="icon" class="icon">⛅</div>
+                        <div class="temp-details" id="weather-temp">1</div>
+                        <div class="weather-unit">℃</div>
+                    </div>
+                </div>
 
-    </header>
-    <main>
+                <div class="text-container">
+                    <p class="details">
+                    <span id="time">Time:</span>
+                    <br/> Humidity: <strong id="humidity"></strong><br>Wind:
+                    <strong id="wind-speed"></strong>
+                    </p>
+                </div>
+            </div>
+            <div class="weather-forecast" id="forecast"> </div>
+        </main>
 
-    </main>
-    <footer>
-        <small>This project was created by <a href="https://github.com/risperNJW">Risper Njeri</a>
-        is on github <a href="https://github.com/RisperNJW/weather-challenge.git" target="_blank"></a>hosted by <a href="#">Netlify</a>
-    </small>
-    </footer>
+        <footer>
+        <small> This project was coded by <a href="https://github.com/RisperNJW" target="_blank">Risper Njeri</a>, is <a href="#" target="_blank">open-sourced on GitHub</a>and
+        <a href="#" target="_blank">hosted on Netlify</a
+        ></small>
+        </footer>
+    </div>
+
+    <script src="scr/script.js"></script>
 </body>
 </html>
