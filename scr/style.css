@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-    max-width: 600px;
+    width: 600px;
     margin: 45px auto;
     padding: 30px;
     border-radius: 10px;
@@ -40,6 +40,9 @@ a {
     border-radius: 5px;
     padding: 10px 8px;
     cursor: pointer;
+}
+main {
+    padding: 30px 0;
 }
 
 .card {
@@ -107,7 +110,6 @@ a {
     text-transform: capitalize;
     line-height: 28px;
     padding: 0 20px;
-    margin: 30px 0;
     align-self: center;
 }
 
@@ -138,3 +140,13 @@ footer {
   color: #520a0a;
 }
 
+@media screen and (min-width: 576px) {
+    body {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 550px;
+    }
+}
