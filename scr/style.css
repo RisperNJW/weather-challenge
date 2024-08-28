@@ -142,18 +142,23 @@ footer {
 
 @media screen and (min-width: 576px) {
     .container {  
-        width: 80%; 
+        width: 90%; 
     }  
 
     .search-form {  
-        width: 60%;   
+        width: 70%;   
     }  
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
 
     .temp-details {  
-        font-size: 48px;  
+        font-size: 56px;  
     }  
 
-    .daily-forecast:hover {  
+    .daily-forecast:hover { 
+        padding: 20px;
         background: rgba(183, 215, 249, 0.5);  
     }  
 
