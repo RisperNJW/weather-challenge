@@ -149,8 +149,11 @@ footer {
         width: 70%;   
     }  
     .card {
+        width: 80%;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 15px;
     }
 
     .temp-details {  
@@ -168,5 +171,11 @@ footer {
 @media screen and (min-width: 767px) {
     .container {
     width: 600px;
+}
+.card
+{
+    display: grid;
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 }
