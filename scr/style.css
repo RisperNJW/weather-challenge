@@ -141,12 +141,89 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-    .container{
-        max-width: 540px;
-        margin: 0 auto;
-    }
-
     .container {
-        width: 550px;
+        width: 80%;
+    }
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    .search-form  {
+        width: 60%;
+    }
+    .weather-condition,.h-city {
+        font-size: 2em;
+    }
+    .temp-details {
+        font-size: 48px;
+    }
+    .daily-forecast {
+        padding: 15px;
+    }
+    .daily-forecast:hover {
+        background: rgba(183, 215, 249, 0.5);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        background-color: #f9f7f7;
+        font-family: 'Lora', serif;
+    }
+    .container {
+        width: 600px;
+        margin: 45px auto;
+        padding: 30px;
+        border-radius: 10px;
+        background: radial-gradient(circle at 10% 20%, rgb(150, 192, 236) 10%, rgba(149, 147, 231, 1) 55.5%);
+        box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+    .header {
+        border-bottom: 2px solid #f9e5e5;
+        padding: 0 0 30px 0;
+    }
+    .search-form {
+        background-color: #f9e5e5;
+        border-radius: 5px;
+        padding: 10px 15px;
+        width: 80%;
+    }
+    .card {
+        display: grid;
+        row-gap: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .weather-container {
+        background-image: url('image.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .temperature-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+        margin: 10px 0;
+    }
+    .daily-forecast {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 5px;
+        padding: 0 10px;
+        border: 1px solid #f9e5e5;
+        background: rgba(221, 220, 220, 0.2);
+        backdrop-filter: blur(4px);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    footer {
+        border-top: 1px solid #a93ca9;
+        padding: 20px 0 0 0;
+        text-align: center;
+        color: #520a0a;
     }
 }
