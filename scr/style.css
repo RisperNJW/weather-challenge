@@ -66,7 +66,7 @@ main{
     background-size: cover;
     margin-top: 20px;
     border-radius: 10px;
-    width: 200px auto;
+    width: 200px ;
     height: 200px;
 }
 .weather-condition {
@@ -160,10 +160,13 @@ footer {
 }
 @media screen  and (max-width:760px){
     .container{
-        width: 40%;
+        width: 80%;
     }
     .search-form{
         width: 80%;
+    }
+    .card{
+        margin: 0 auto;
     }
     
     main{  
@@ -171,7 +174,7 @@ footer {
         margin: 0 ;
     }
      .weather-container{
-        width: 150px auto;
+        width: 150px;
         height: 150px ;
         margin: 20px 0 20px 0;
      }
