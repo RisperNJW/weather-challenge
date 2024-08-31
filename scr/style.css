@@ -123,7 +123,6 @@ main{
 }
 
 .daily-forecast {
-    text-align: center;
     margin: 0 5px;
     padding: 0 10px;
     width: 60%;
@@ -203,7 +202,7 @@ footer {
      }
      .daily-forecast{
         font-size: 10px;
-        padding: 0 10px;
+        padding: 0 8px;
         margin: 0 5px 10px 0;
         text-align: center;
      }
