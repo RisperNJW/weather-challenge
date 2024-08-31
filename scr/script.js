@@ -17,7 +17,7 @@ function weatherInfo(response) {
   descriptionElement.innerHTML = response.data.condition.description;  
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;  
   windElement.innerHTML = `${response.data.wind.speed} km/h`;  
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" alt="Weather icon"/>`;  
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" width="60px" alt="Weather icon"/>`;  
   temperatureElement.innerHTML = Math.round(currentTemperature);  
 
   // Call function to get forecast for the current city  

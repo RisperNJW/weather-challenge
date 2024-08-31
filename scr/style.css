@@ -8,21 +8,32 @@ a {
     color: #f9f7f7;
 }
 
-.main {
-    padding: 30px 0;
-}
-
 .container {
-    width: 80%;
+    width: min(80%, 800px);
     margin: 45px auto;
     padding: 30px;
     border-radius: 10px;
     background: radial-gradient(circle at 10% 20%, rgb(150, 192, 236) 10%, rgba(149, 147, 231, 1) 55.5%);
     box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2); ;
 }
+
 .header {
     border-bottom: 2px solid #f9e5e5;
     padding: 0 0 30px 0;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 0 0 40px;
+    
 }
 
 .search-form {
@@ -30,8 +41,6 @@ a {
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
-    margin: 30px 0 0 0;
-    width: 80%;
 }
 
 .submit-btn {
@@ -41,15 +50,14 @@ a {
     padding: 10px 8px;
     cursor: pointer;
 }
-main {
-    padding: 30px 0;
-}
-
-.card {
+ .card {
     display: grid;
-    row-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
-}
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+} 
 
 .weather-container {
     background-image:url('image.jpg');
@@ -58,8 +66,9 @@ main {
     background-size: cover;
     margin-top: 20px;
     border-radius: 10px;
+    width: 200px auto;
+    height: 200px;
 }
-
 .weather-condition {
     font: 1em 'Lora', serif;
     text-transform: capitalize;
@@ -68,12 +77,10 @@ main {
 
 .temperature-container {
     display: flex;
-    justify-content: center;
-    padding: 0 20px;
-    margin: 10px 0;
+    align-items: center;
 }
 .temp-details {
-    font-size: 40px;
+    font-size: 3em;
     line-height: 40px;
     align-items: center;
 } 
@@ -84,9 +91,8 @@ main {
     left: -5px;
 }
 .h-city{
-    padding: 0 20px;
-    font-size: 40px;
     line-height: 40px;
+    padding: 0 20px;
 }
 .weather-unit{
     position: relative;
@@ -97,45 +103,40 @@ main {
 
 .text-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin: 30px 0;
 }
 
 .details {
-    font-size: 20px;
+    line-height: 20px;
+    font-size: 1em;
     font-style: italic;
     font-weight: 600;
     text-transform: capitalize;
-    line-height: 28px;
-    padding: 0 20px;
-    align-self: center;
 }
 
-.weather-forecast {
+ .weather-forecast{ 
+    max-width: 10%;
     display: flex;
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 
 .daily-forecast {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     margin: 0 5px;
     padding: 0 10px;
+    width: 60%;
+    font-size: 12px;
     border: 1px solid #f9e5e5;
     background: rgba(221, 220, 220, 0.2);
     backdrop-filter: blur(4px);
     border-radius: 5px;
     cursor: pointer;
 }
-.daily-forecast:hover
-{
+.daily-forecast:hover {
     background: rgba(183, 215, 249, 0.5);
 }
-
 
 footer {
   border-top: 1px solid #a93ca9;
@@ -144,31 +145,66 @@ footer {
   color: #520a0a;
 }
 
-@media screen and (min-width: 576px) {
-    .container {  
-        width: 90%;
-        padding: 15px; 
-    }  
-
-    .search-form {  
-        width: 85%;   
-    }  
-    .card {
-        width: 100%;
-        grid-template-columns: repeat( 1fr);
-        margin: 10px 0;
-        padding: 10px;
+@media screen and (min-width:540px){
+    .container{
+        width: 40%;
     }
-
-    .temp-details {  
-        font-size: 56px;  
-    }  
-
+    .search-form{
+        width: 60%;
+    }
+   
+    main {
+        margin: 0 0 0 40px;
+    }
+   
 }
-
-
-@media screen and (min-width: 767px) {
-    .container {
-    width: 600px;
-}
+@media screen  and (max-width:760px){
+    .container{
+        width: 40%;
+    }
+    .search-form{
+        width: 80%;
+    }
+    
+    main{  
+        flex-direction: column;
+        margin: 0 ;
+    }
+     .weather-container{
+        width: 150px auto;
+        height: 150px ;
+        margin: 20px 0 20px 0;
+     }
+     .weather-condition{
+        font-size: 15px;
+     }
+     .h-city{
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0 10px;
+     }
+     .temp-details{
+        font-size: 20px;
+     }
+    
+     .text-container{
+        font-size: 18px;
+        padding:0 10px;
+     }
+     
+     .weather-forecast{
+        width: 100%;
+     }
+     .details{
+        font-size: 0.8em;
+     }
+     .daily-forecast{
+        font-size: 10px;
+        padding: 0 10px;
+        margin: 0 5px 10px 0;
+        text-align: center;
+     }
+     footer{
+        font-size: 10px;
+     }
 }
