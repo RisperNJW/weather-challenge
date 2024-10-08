@@ -84,12 +84,12 @@ function displayForecast(response) {
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {  
-    if (index < 7) { 
+    if (index < 5) { 
       let maxTemperature = Math.round(day.temperature.maximum);  
       let minTemperature = Math.round(day.temperature.minimum);  
       let icon = day.condition.icon_url;  
 
-      forecastHtml += `<div class="daily-forecast">${formatDay(day.time)}: <img src="${icon}" alt="Weather icon" width="36"> ${maxTemperature}℃/ ${minTemperature}℃</div>`;  
+      forecastHtml += `<div class="daily-forecast">${formatDay(day.time)}: <img src="${icon}" alt="Weather icon" width="36"> ${maxTemperature}℃ ${minTemperature}℃</div>`;  
     }  
   });  
 
