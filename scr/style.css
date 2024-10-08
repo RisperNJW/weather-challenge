@@ -24,7 +24,7 @@ a {
 
 .search-form {
     background-color: transparent;
-    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.4);
     font-size: 14px;
     padding: 15px;
     width: 75%;
@@ -36,7 +36,7 @@ a {
 
 .submit-btn {
     background-color: transparent;
-    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.4);
     padding: 17px;
     width: 100px;
     font-size: 14px;
@@ -116,6 +116,8 @@ a {
 }
 .daily-forecast:hover {
     background: linear-gradient(90deg,rgba(252, 145, 194, 0.8) 0%, rgba(172, 206, 244, 0.8) 100%);
+    transition: all 1000ms ease-in-out;
+    cursor: pointer;
 }
 
 footer {
@@ -131,7 +133,7 @@ footer {
         margin:20px auto;
     }
     .search-form {
-        width: 55%;
+        width: 60%;
     }
     .submit-btn {
         width: 80px;

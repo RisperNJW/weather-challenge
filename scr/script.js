@@ -59,6 +59,7 @@ function searchSubmit(event) {
   let city = searchInput.value;  
   console.log("Search Input Value:", city);  
   searchCity(city); 
+  searchInput.value = '';
 }  
 
 function formatDay(timestamp) {  
